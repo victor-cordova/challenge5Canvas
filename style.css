@@ -1,0 +1,84 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); */
+
+:root {
+    --y-position: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Pacifico', cursive;
+    /* font: "Pacifico"; */
+    
+}
+
+figure {
+    overflow: hidden;
+    width: 20vw;
+    /* border: solid red 2px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+    transition: 450ms;
+
+}
+
+img {
+    position: absolute;
+    z-index: 1;
+}
+
+figcaption {
+    z-index: 2;
+    font-size: 3rem;
+    color: red;
+    font-weight: 700;
+}
+
+figure:hover {
+    /* flex: 3; */
+    width: 430px;
+    /* overflow: visible; */
+    
+}
+
+figcaption {
+    transition: 750ms;
+}
+
+.title_top {
+    /* transform: translateY(var(--y-position)); */
+    transform: translateY(-200px);
+}
+
+.title_bottom {
+    transform: translateY(200px);
+}
+
+.title_center {
+    font-size: 4rem;
+}
+
+figure:hover figcaption {
+    transform: translateY(0px);
+}
+
+figure:hover .title_center {
+    font-size: 6.5rem;
+}
+
